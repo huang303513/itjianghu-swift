@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fuc-LQ-dv4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xl0-Ri-qAH">
+            <objects>
+                <tabBarController id="fuc-LQ-dv4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dIo-q6-1g9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gcB-4i-5Oj" kind="relationship" relationship="viewControllers" id="eQM-bF-8co"/>
+                        <segue destination="bJJ-xd-voQ" kind="relationship" relationship="viewControllers" id="lAc-ic-gzy"/>
+                        <segue destination="ghl-sI-iEC" kind="relationship" relationship="viewControllers" id="4rb-l6-OtD"/>
+                        <segue destination="N41-HJ-4Vx" kind="relationship" relationship="viewControllers" id="4FP-mx-osn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sag-3b-YEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="886"/>
+        </scene>
+        <!--技术-->
+        <scene sceneID="JnT-KT-nru">
+            <objects>
+                <navigationController id="bJJ-xd-voQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="技术" image="js" id="fhL-1x-5YF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ezz-AJ-T9M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tXi-fp-BPJ" kind="relationship" relationship="rootViewController" id="tgK-WS-7Ev"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5a-kt-O71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="587"/>
+        </scene>
+        <!--技术-->
+        <scene sceneID="dOy-co-QtB">
+            <objects>
+                <viewController id="tXi-fp-BPJ" customClass="JiShuViewController" customModule="itjh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgx-d2-4Df">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="技术" id="6bL-Rv-RWO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOV-IU-tq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="578"/>
+        </scene>
+        <!--趣文-->
+        <scene sceneID="ogb-th-m3O">
+            <objects>
+                <tableViewController id="RsH-Zk-uer" customClass="QuWenTableViewController" customModule="itjh" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" id="B2H-hN-6Xm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="quwenCell" rowHeight="80" id="Ugz-4Q-B4a" customClass="QuWenViewCell" customModule="itjh" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ugz-4Q-B4a" id="e6K-ZC-Mbu">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="DkG-IG-Lxj">
+                                            <rect key="frame" x="10" y="10" width="250" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_showPic" id="xf3-0J-rjJ">
+                                            <rect key="frame" x="260" y="10" width="55" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="quwenPictureView" destination="xf3-0J-rjJ" id="GJv-OZ-I4g"/>
+                                    <outlet property="quwentextView" destination="DkG-IG-Lxj" id="lnq-D5-A40"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RsH-Zk-uer" id="gLE-NU-TaN"/>
+                            <outlet property="delegate" destination="RsH-Zk-uer" id="4nh-nE-EWv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="趣文" id="mXs-JJ-YCD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljy-Fl-z8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="1221"/>
+        </scene>
+        <!--我的江湖-->
+        <scene sceneID="s3y-Ia-h7U">
+            <objects>
+                <tableViewController id="Svi-hN-sbn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="AqY-ED-hSH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="hEp-ek-JKi">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="gS8-rz-dyD">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gS8-rz-dyD" id="1aX-KJ-56l">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zOH-Hl-B3V">
+                                                    <rect key="frame" x="28" y="8" width="123" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WHV-J7-aAS" kind="push" id="YYd-lX-bPe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="2XP-Y8-viq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KT9-Dq-KyV">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KT9-Dq-KyV" id="lxD-ok-hsK">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注我" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pdk-Yd-td4">
+                                                    <rect key="frame" x="30" y="8" width="69" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dNU-yd-lOe" kind="push" id="ibH-vK-RMx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MdX-e5-kCZ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MdX-e5-kCZ" id="3Oc-5P-u8V">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kN5-b3-Lo7">
+                                                    <rect key="frame" x="31" y="14" width="119" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Svi-hN-sbn" id="g8Q-D0-H6P"/>
+                            <outlet property="delegate" destination="Svi-hN-sbn" id="DD1-kC-5HF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的江湖" id="pDy-Tl-e9u"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXk-mm-REx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="1885"/>
+        </scene>
+        <!--我的小媚娘-->
+        <scene sceneID="X3J-rK-LrM">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="WHV-J7-aAS" customClass="aboutViewController" customModule="itjh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fj2-eG-nyP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wumeiniang" highlightedImage="wumeiniang" id="5uC-3N-z5A">
+                                <rect key="frame" x="54" y="117" width="212" height="301"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的小媚娘" id="0Sw-zE-Krv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJl-7N-dBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="1432"/>
+        </scene>
+        <!--关注我-->
+        <scene sceneID="fe4-hO-8iy">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="dNU-yd-lOe" customClass="CareViewController" customModule="itjh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xym-sK-IUo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ交流群:415423729 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9HS-Oj-eeA">
+                                <rect key="frame" x="53" y="120" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：15067151195" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jon-lc-A8e">
+                                <rect key="frame" x="53" y="158" width="164" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="本人是一个iOS开发人员,本项目用的是IT江湖开源客户端提供的接口。如有不适请及时与我联系。此项目为我学swift开发的业余项目，目的在于熟悉Swift语法以及Swift下相应的程序编写。有很多不足之处，请多多谅解。" id="ZHh-hl-PhQ">
+                                <rect key="frame" x="40" y="199" width="240" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="关注我" id="9Vl-4b-aDq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eD-4X-WkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="2074"/>
+        </scene>
+        <!--我的江湖-->
+        <scene sceneID="uOC-sA-Cz4">
+            <objects>
+                <navigationController id="N41-HJ-4Vx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的江湖" image="user" id="2FG-Sy-9xQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XZP-q3-EB7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Svi-hN-sbn" kind="relationship" relationship="rootViewController" id="aQy-Xw-xcs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLY-7q-0eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="1934"/>
+        </scene>
+        <!--趣文-->
+        <scene sceneID="qCD-Sr-TVW">
+            <objects>
+                <navigationController id="ghl-sI-iEC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="趣文" image="qw" id="tbl-KL-4Q6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Ot-lY-Nc3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RsH-Zk-uer" kind="relationship" relationship="rootViewController" id="EHu-jZ-Mk1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZr-tR-9FA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="1237"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="qLH-8x-PLB">
+            <objects>
+                <navigationController id="gcB-4i-5Oj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tab_home_icon" id="XdK-cD-dya"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HaP-TP-L4I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FOu-Nh-qS8" kind="relationship" relationship="rootViewController" id="4wL-BZ-lGC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0r7-pC-XSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="-34"/>
+        </scene>
+        <!--IT江湖-->
+        <scene sceneID="bzf-Th-KuV">
+            <objects>
+                <viewController id="FOu-Nh-qS8" customClass="ShouYeViewController" customModule="itjh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exh-mz-TdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="IT江湖" id="ihi-dM-6NS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKL-Rc-MnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="-52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default_showPic" width="90" height="70"/>
+        <image name="js" width="30" height="30"/>
+        <image name="qw" width="30" height="30"/>
+        <image name="tab_home_icon" width="30" height="30"/>
+        <image name="user" width="30" height="30"/>
+        <image name="wumeiniang" width="400" height="533"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

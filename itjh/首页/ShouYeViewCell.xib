@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ShouYeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShouYeCell" rowHeight="80" id="KGk-i7-Jjw" customClass="ShouYeViewCell" customModule="itjh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyd-Eq-hOJ">
+                        <rect key="frame" x="10" y="10" width="220" height="59"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default_showPic" highlightedImage="default_showPic" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-v9-Cif">
+                        <rect key="frame" x="236" y="10" width="60" height="60"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="yyd-Eq-hOJ" secondAttribute="bottom" constant="5" id="6Z8-nv-NrQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5fL-v9-Cif" secondAttribute="trailing" constant="5" id="A3U-Yf-X5w"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5fL-v9-Cif" secondAttribute="bottom" constant="10" id="Dgn-sN-abZ"/>
+                    <constraint firstItem="yyd-Eq-hOJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="WBG-5V-rJk"/>
+                    <constraint firstItem="5fL-v9-Cif" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="223" id="Ymh-Bk-fHc"/>
+                    <constraint firstItem="5fL-v9-Cif" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="aCa-wZ-JQ8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yyd-Eq-hOJ" secondAttribute="trailing" constant="84" id="oih-gQ-cmX"/>
+                    <constraint firstItem="yyd-Eq-hOJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="yeS-TV-Z3q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="pictureView" destination="5fL-v9-Cif" id="uYJ-WQ-eoC"/>
+                <outlet property="textView" destination="yyd-Eq-hOJ" id="gQg-69-d3l"/>
+            </connections>
+            <point key="canvasLocation" x="511" y="379"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_showPic" width="90" height="70"/>
+    </resources>
+</document>
