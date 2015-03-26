@@ -20,6 +20,9 @@
 		4DD616BE1A7FA2D20057352D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD616BD1A7FA2D20057352D /* Article.swift */; };
 		4DD616C01A7FA3810057352D /* NetRequestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD616BF1A7FA3810057352D /* NetRequestTool.swift */; };
 		4DD616DF1A7FB17B0057352D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD616DD1A7FB17B0057352D /* SwiftyJSON.swift */; };
+		7BDBB2A41AC4033E00FD38E2 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BDBB2A11AC4033E00FD38E2 /* 3.png */; };
+		7BDBB2A51AC4033E00FD38E2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BDBB2A21AC4033E00FD38E2 /* 2.png */; };
+		7BDBB2A61AC4033E00FD38E2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BDBB2A31AC4033E00FD38E2 /* 1.png */; };
 		8E139C441A82074A004C4866 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E139C431A82074A004C4866 /* ImageLoader.swift */; };
 		8E2892F01A821EC7006281E0 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DD6177A1A7FBA8D0057352D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E2893001A8232F7006281E0 /* aboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2892FF1A8232F7006281E0 /* aboutViewController.swift */; };
@@ -164,6 +167,9 @@
 		4DD616DD1A7FB17B0057352D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		4DD616E01A7FB4410057352D /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 		4DD617701A7FBA8D0057352D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		7BDBB2A11AC4033E00FD38E2 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		7BDBB2A21AC4033E00FD38E2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7BDBB2A31AC4033E00FD38E2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		8E139C431A82074A004C4866 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		8E2892FF1A8232F7006281E0 /* aboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutViewController.swift; sourceTree = "<group>"; };
 		8E2893041A823305006281E0 /* CareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareViewController.swift; sourceTree = "<group>"; };
@@ -353,6 +359,7 @@
 		4DD6168B1A7F88740057352D /* itjh */ = {
 			isa = PBXGroup;
 			children = (
+				7BDBB29D1AC402A100FD38E2 /* screenShoot */,
 				4DD616BB1A7FA23F0057352D /* 第三方库 */,
 				4DD616BC1A7FA23F0057352D /* 工具 */,
 				4DD616B11A7F8D280057352D /* 我的江湖 */,
@@ -507,6 +514,16 @@
 				4DD6177E1A7FBA8D0057352D /* Alamofire OSX Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7BDBB29D1AC402A100FD38E2 /* screenShoot */ = {
+			isa = PBXGroup;
+			children = (
+				7BDBB2A11AC4033E00FD38E2 /* 3.png */,
+				7BDBB2A21AC4033E00FD38E2 /* 2.png */,
+				7BDBB2A31AC4033E00FD38E2 /* 1.png */,
+			);
+			name = screenShoot;
 			sourceTree = "<group>";
 		};
 		8E139C3F1A820738004C4866 /* SwiftImageLoader */ = {
@@ -943,12 +960,15 @@
 				8EB9E2611A807BBB00CD29D7 /* UMSShareListController.xib in Resources */,
 				8EB9E25F1A807BBB00CD29D7 /* UMSLoginViewController.xib in Resources */,
 				8EB9E26B1A807BBC00CD29D7 /* ios-social-sdk-shake.html in Resources */,
+				7BDBB2A51AC4033E00FD38E2 /* 2.png in Resources */,
 				8EB9E26D1A807BBC00CD29D7 /* ios-social-sdk-shake.html in Resources */,
+				7BDBB2A61AC4033E00FD38E2 /* 1.png in Resources */,
 				4DD616961A7F88740057352D /* Images.xcassets in Resources */,
 				4DD616BA1A7F945E0057352D /* ShouYeViewCell.xib in Resources */,
 				8EB9E25B1A807BBB00CD29D7 /* UMSCommentInputController.xib in Resources */,
 				8EB9E25A1A807BBB00CD29D7 /* UMSCommentDetailController.xib in Resources */,
 				8EB9E2741A807BBC00CD29D7 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				7BDBB2A41AC4033E00FD38E2 /* 3.png in Resources */,
 				8EB9E25D1A807BBB00CD29D7 /* UMShareEditViewController.xib in Resources */,
 				8EB9E25C1A807BBB00CD29D7 /* UMSCommentInputControlleriPad.xib in Resources */,
 				8EB9E2581A807BBB00CD29D7 /* UMSocialLocalizable.strings in Resources */,
